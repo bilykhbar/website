@@ -1,0 +1,199 @@
+/* Custom CSS untuk Law Firm Landing Page */
+
+/* Global */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.7;
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scroll for anchor links */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary Blue */
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fff !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x1080/007bff/ffffff?text=Law+Firm+Background') no-repeat center center; /* Ganti dengan gambar hero Anda */
+    background-size: cover;
+    min-height: 100vh; /* Full viewport height */
+    position: relative;
+    padding-top: 56px; /* Offset for fixed navbar */
+}
+
+.hero-section h1 {
+    font-size: 3.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section p.lead {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Section Styling */
+section {
+    padding: 80px 0;
+}
+
+section:nth-of-type(even) { /* Apply to every other section for alternating background */
+    background-color: #f8f9fa;
+}
+
+/* About Section */
+#about .row div:first-child { /* Image column */
+    animation: fadeInLeft 1s ease-out;
+}
+#about .row div:last-child { /* Text column */
+    animation: fadeInRight 1s ease-out;
+}
+
+/* Services Icons */
+#about .fas {
+    color: #007bff;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* Client Section */
+#clients img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+#clients img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: linear-gradient(rgba(0, 123, 255, 0.85), rgba(0, 123, 255, 0.85)), url('https://via.placeholder.com/1920x1080/007bff/ffffff?text=Blue+Pattern') no-repeat center center;
+    background-size: cover;
+}
+
+#testimonials .carousel-item {
+    padding: 30px;
+}
+
+#testimonials img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#testimonials .lead {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://via.placeholder.com/1920x1080/343a40/ffffff?text=Contact+Background') no-repeat center center; /* Ganti dengan gambar kontak Anda */
+    background-size: cover;
+    color: #fff;
+}
+
+.contact-section .form-control-lg {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.contact-section .form-control-lg::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-section .form-control-lg:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section ul li i {
+    color: #007bff;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+        padding-top: 15px;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    .hero-section p.lead {
+        font-size: 1.2rem;
+    }
+}
